@@ -113,7 +113,8 @@ h2 { margin-top: 8px; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.02; 
   line-height: 1.2;
   letter-spacing: -.035em;
 }
-.card .button { background: #1b1531; color: var(--accent); }
+.store-links { display: flex; gap: 8px; }
+.card .button { gap: 7px; padding-inline: 10px; white-space: nowrap; background: #1b1531; color: var(--accent); }
 
 .contact-panel { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 28px; padding: clamp(22px, 5vw, 56px); border-radius: 15px; border: 1px solid var(--line); background: linear-gradient(115deg, #151b36, #302052); }
 .contact-panel .section-copy { margin-top: 12px; }
@@ -144,6 +145,7 @@ h2 { margin-top: 8px; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.02; 
 .footer-inner > a:last-child { padding-block: 6px; }
 
 @media (max-width: 900px) {
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero { min-height: 0; background: #100d21; }
   .hero-content { padding-block: 48px 300px; }
   .hero::before {
